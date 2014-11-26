@@ -48,6 +48,12 @@ def server_config(defaults=None):
               help=_('Prefix to prepend to all URLs. Useful for reverse'
                   'proxying to this server from Apache/nginx/etc.'))
 
+    c.add_opt('tenants', ['--tenants'], default='',
+              help=_('set of sets of multi-tenancy settings.  ex: '
+              '( (username,password,virtual_lib),(username,password,virtual_lib) )'))
+
+
+
     return c
 
 def custom_fields_to_display(db):

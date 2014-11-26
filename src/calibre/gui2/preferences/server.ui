@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>641</width>
-    <height>563</height>
+    <height>562</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -195,6 +195,64 @@
     </layout>
    </item>
    <item>
+    <widget class="QLabel" name="label_4">
+     <property name="text">
+      <string>To support multiple libraries, enter the tenants below.  this only works with clients taht support username/passwords.</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QTableView" name="opt_mult_tenant_list"/>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="_2">
+     <item>
+      <widget class="QPushButton" name="add_tenant_button">
+       <property name="text">
+        <string>Add Tenant</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="rem_tenant_button">
+       <property name="text">
+        <string>Remove Tenant</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="edit_tenant_button">
+       <property name="text">
+        <string>Edit Tenant</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_2">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QLabel" name="label_9">
+     <property name="text">
+      <string>calibre contains a network server that allows you to access your book collection using a browser from anywhere in the world. Any changes to the settings will only take effect after a server restart.</string>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item>
     <layout class="QHBoxLayout" name="horizontalLayout_2">
      <item>
       <widget class="QPushButton" name="start_button">
@@ -231,16 +289,6 @@
       </widget>
      </item>
     </layout>
-   </item>
-   <item>
-    <widget class="QLabel" name="label_9">
-     <property name="text">
-      <string>calibre contains a network server that allows you to access your book collection using a browser from anywhere in the world. Any changes to the settings will only take effect after a server restart.</string>
-     </property>
-     <property name="wordWrap">
-      <bool>true</bool>
-     </property>
-    </widget>
    </item>
    <item>
     <widget class="QCheckBox" name="opt_autolaunch_server">
